@@ -51,5 +51,9 @@
     "results":{
       "A": "Você muito provavelmente seria um super vilão!",
       "B": "Você muito provavelmente seria um super Herói!"
+    },
+    "gif": {
+      "A": "https://i.pinimg.com/originals/41/5d/15/415d15a93f65bb9e44b2dc05b912cb7d.gif",
+      "B": "https://i.pinimg.com/originals/86/f2/3f/86f23fcc40ffd501b2064ecc0eb7e99c.gif"
     }
   }

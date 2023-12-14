@@ -75,3 +75,15 @@
   justify-content: center;
   align-items: center;
 }
+
+.quizz_results > img {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.A > img {
+  border: 2px solid black;
+}
+.B > img {
+  border: 2px solid #18ab29;
+}

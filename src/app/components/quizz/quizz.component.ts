@@ -14,9 +14,12 @@ export class QuizzComponent implements OnInit {
   questionSelected:any
   answers:string[] = []
   answerSelected:string = ""
-
+  
   questionIndex:number = 0
   questionMaxIndex:number = 0
+  
+  gifLink : string = ""
+  gifClassName: string = ""
 
   finished: boolean = false
 
@@ -37,6 +40,7 @@ export class QuizzComponent implements OnInit {
 
   playerChoose(value:string) {
     this.answers.push(value)
+    this.nextStep()
   }
 
   async nextStep() {
@@ -45,7 +49,26 @@ export class QuizzComponent implements OnInit {
     if(this.questionMaxIndex > this.questionIndex) {
       this.questionSelected = this.questions[this.questionIndex]
     }else {
+      const finalAnswer:string = await this.checkResult(this.answers);
+      this.gifClassName = finalAnswer
       this.finished = true
+      this.answerSelected = quizz_questions.results[finalAnswer as keyof typeof quizz_questions.results]
+      this.gifLink = quizz_questions.gif[finalAnswer as keyof typeof quizz_questions.results]
     }
+  }
+
+async checkResult(answers:string[]) {
+    const result = answers.reduce((prev, curr, i, arr) => {
+      if(
+        arr.filter(item => item === prev).length > 
+        arr.filter(item => item === curr).length 
+      ) {
+        return prev
+      }else {
+        return curr
+      }
+
+    })
+    return result
   }
 }
