@@ -1,59 +1,127 @@
-{
-    "title":"Você seria um heroi ou vilão ?",
-    "questions":[
+  {
+    "title": "Descubra qual personagem de Star Wars você seria!",
+    "questions": [
       {
-        "id":1,
-        "question": "Qual super poder você escolheria ?",
-        "options":[
-          {"id": 1, "name":"Raios-Lasers", "alias":"A"},
-          {"id": 2, "name":"Voar", "alias":"B"},
-          {"id": 3, "name":"Explodir coisas", "alias":"A"},
-          {"id": 4, "name":"Curar feridas", "alias":"B"},
-          {"id": 5, "name":"Soltar fogo pelas mãos", "alias":"A"}
+        "id": 1,
+        "question": "Qual é a sua cor favorita?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Azul"
+          },
+          {
+            "id": "b",
+            "text": "Vermelho"
+          },
+          {
+            "id": "c",
+            "text": "Verde"
+          },
+          {
+            "id": "d",
+            "text": "Preto"
+          }
         ]
       },
       {
-        "id":2,
-        "question": "Quem você salvaria primeiro ?",
-        "options":[
-          {"id": 1, "name":"Crianças", "alias":"A"},
-          {"id": 2, "name":"Idosos", "alias":"A"},
-          {"id": 3, "name":"Não saberia escolher", "alias":"B"}
+        "id": 2,
+        "question": "O que você prefere fazer nas horas vagas?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ler um livro"
+          },
+          {
+            "id": "b",
+            "text": "Treinar exercícios físicos"
+          },
+          {
+            "id": "c",
+            "text": "Assistir a filmes ou séries"
+          },
+          {
+            "id": "d",
+            "text": "Explorar novos lugares"
+          }
         ]
       },
       {
-        "id":3,
-        "question": "Qual a sua maior preocupação ao enfretar outro super ser ?",
-        "options":[
-          {"id": 1, "name":"Não destruir prédios", "alias":"B"},
-          {"id": 2, "name":"Socar a cara do inimigo", "alias":"A"},
-          {"id": 3, "name":"Não sujar meu traje", "alias":"A"},
-          {"id": 4, "name":"Não deixar ninguém se ferir", "alias":"B"}
+        "id": 3,
+        "question": "Escolha uma palavra que melhor descreva você:",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sábio"
+          },
+          {
+            "id": "b",
+            "text": "Determinado"
+          },
+          {
+            "id": "c",
+            "text": "Divertido"
+          },
+          {
+            "id": "d",
+            "text": "Aventureiro"
+          }
         ]
       },
       {
         "id":4,
-        "question": "Qual o seu maior foco ?",
+        "question": "Qual super poder você escolheria ?",
         "options":[
-          {"id": 1, "name":"Ficar rico com poderes", "alias":"A"},
-          {"id": 2, "name":"Salvar a cidade", "alias":"B"}
+          {"id": "a", "text":"Raios-Lasers"},
+          {"id": "b", "text":"Voar"},
+          {"id": "c", "text":"Explodir coisas"},
+          {"id": "d", "text":"Curar feridas"}
         ]
       },
       {
         "id":5,
-        "question": "Qual o seu apelido de super ser ?",
+        "question": "Quem você salvaria primeiro ?",
         "options":[
-          {"id": 1, "name":"O Terrivel", "alias":"A"},
-          {"id": 2, "name":"Amigo da vizinhança", "alias":"B"}
+          {"id": "a", "text":"Crianças"},
+          {"id": "b", "text":"Idosos"},
+          {"id": "c", "text":"Gatinhos"},
+          {"id": "d", "text":"Não saberia escolher"}
+        ]
+      },
+      {
+        "id":6,
+        "question": "Qual a sua maior preocupação ao enfretar outro super ser ?",
+        "options":[
+          {"id": "a", "text":"Não destruir prédios"},
+          {"id": "b", "text":"Socar a cara do inimigo"},
+          {"id": "c", "text":"Não sujar meu traje"},
+          {"id": "d", "text":"Não deixar ninguém se ferir"}
         ]
       }
     ],
-    "results":{
-      "A": "Você muito provavelmente seria um super vilão!",
-      "B": "Você muito provavelmente seria um super Herói!"
-    },
-    "gif": {
-      "A": "https://i.pinimg.com/originals/41/5d/15/415d15a93f65bb9e44b2dc05b912cb7d.gif",
-      "B": "https://i.pinimg.com/originals/86/f2/3f/86f23fcc40ffd501b2064ecc0eb7e99c.gif"
-    }
+    "results": [
+      {
+        "id": "result_a",
+        "title": "Você seria Yoda!",
+        "gif": "https://i.pinimg.com/originals/86/f2/3f/86f23fcc40ffd501b2064ecc0eb7e99c.gif",
+        "description": "Sábio, experiente e sempre em busca do equilíbrio na Força. Como Yoda, você tem uma grande sabedoria interior."
+      },
+      {
+        "id": "result_b",
+        "title": "Você seria Darth Vader!",
+        "gif": "https://i.pinimg.com/originals/41/5d/15/415d15a93f65bb9e44b2dc05b912cb7d.gif",
+        "description": "Determinado e poderoso, você é como Darth Vader. Sua força é impressionante, mas cuidado para não ceder ao lado sombrio."
+      },
+      {
+        "id": "result_c",
+        "title": "Você seria Han Solo!",
+        "gif": "https://media.tenor.com/HbV3QgeeIUkAAAAC/han-solo-star-wars.gif",
+        "description": "Divertido, corajoso e com um toque de malandragem, assim como Han Solo. Você não tem medo de enfrentar desafios e viver grandes aventuras."
+      },
+      {
+        "id": "result_d",
+        "title": "Você seria Luke Skywalker!",
+        "gif": "https://3.bp.blogspot.com/-T6vnPj1Haw4/VSaVCCDW9mI/AAAAAAAAQgg/rQUrO6aw8PM/s1600/Luke%2BSkywalker%2B1.gif",
+        "description": "Aventureiro e destinado a grandes feitos, você é como Luke Skywalker. Sua jornada é cheia de descobertas e crescimento pessoal."
+      }
+    ]
   }
