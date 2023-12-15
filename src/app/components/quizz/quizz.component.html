@@ -9,15 +9,24 @@
   <div *ngIf="!finished" class="quizz_options">
     <button
       *ngFor="let option of questionSelected.options; let i = index"
-      (click)="playerChoose(option.alias)"
+      (click)="playerChoose(option.id)"
       class="btn-option"
     >
-      {{ option.name }}
+      {{ option.text }}
     </button>
   </div>
   <div *ngIf="finished" class="quizz_results {{ gifClassName }}">
     <h1>O Seu resultado é:</h1>
-    <p>{{ answerSelected }}</p>
-    <img src="{{ gifLink }}" alt="gif" />
+    <p>{{ answerSelected[0].title }}</p>
+    <img src="{{ answerSelected[0].gif }}" alt="gif" />
+    <p>{{ answerSelected[0].description }}</p>
+    <button
+      type="button"
+      *ngIf="finished"
+      class="btn-retake"
+      (click)="retakeTest()"
+    >
+      Refazer o teste
+    </button>
   </div>
 </div>

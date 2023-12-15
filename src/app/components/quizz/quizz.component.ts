@@ -13,12 +13,10 @@ export class QuizzComponent implements OnInit {
   questions:any
   questionSelected:any
   answers:string[] = []
-  answerSelected:string = ""
-  
+  answerSelected:any   
   questionIndex:number = 0
   questionMaxIndex:number = 0
   
-  gifLink : string = ""
   gifClassName: string = ""
 
   finished: boolean = false
@@ -32,6 +30,7 @@ export class QuizzComponent implements OnInit {
 
       this.questions = quizz_questions.questions
       this.questionSelected = this.questions[this.questionIndex]
+      console.log(this.questionSelected)
 
       this.questionIndex = 0
       this.questionMaxIndex = this.questions.length 
@@ -49,11 +48,10 @@ export class QuizzComponent implements OnInit {
     if(this.questionMaxIndex > this.questionIndex) {
       this.questionSelected = this.questions[this.questionIndex]
     }else {
-      const finalAnswer:string = await this.checkResult(this.answers);
+      const finalAnswer:string = "result_" + await this.checkResult(this.answers);
       this.gifClassName = finalAnswer
       this.finished = true
-      this.answerSelected = quizz_questions.results[finalAnswer as keyof typeof quizz_questions.results]
-      this.gifLink = quizz_questions.gif[finalAnswer as keyof typeof quizz_questions.results]
+      this.answerSelected = quizz_questions.results.filter((e) => e.id === finalAnswer)
     }
   }
 
@@ -70,5 +68,12 @@ async checkResult(answers:string[]) {
 
     })
     return result
+  }
+
+  retakeTest() {
+    this.questionIndex = 0;
+    this.questionSelected = this.questions[this.questionIndex]
+    this.finished = false;
+    this.answerSelected = {}
   }
 }
