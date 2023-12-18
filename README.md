@@ -1,27 +1,56 @@
-# BuzzfeedClone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 
-## Development server
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<p align="center">
+ <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=49AA26&labelColor=000000" alt="PRs welcome!" />
 
-## Code scaffolding
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+</p>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<br>
 
-## Build
+<p align="center">
+  <img alt="Rocket.Q" src=".github/buzz_video.gif" width="80%">
+</p>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🚀 Tecnologias
 
-## Running unit tests
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- HTML
+- CSS
+- Typescript
+- Angular
+- Node
+- Netlify
 
-## Running end-to-end tests
+## 💻 Projeto
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Esse projeto foi proposto como um desafio de frontend durante o Bootcamp de frontend com angular promovido pelo banco PAN em parceria com a plataforma DIO.
 
-## Further help
+Esse desafio buscou propor a homepage de um site de blog, os dados até o momento são fixos, e utilizei pela temática de Star wars.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Foi feito o deploy do site desenvolvido utilizando a plataforma Netlify, você pode acessar através [desse link](https://fabulous-sopapillas-f97f96.netlify.app/)
+
+## 👨‍💻 Como-rodar-o-projeto
+
+Você precisa ter o <strong>Node.js</strong> instalado na sua máquina. Senão tiver você pode fazer o download através [desse link](https://nodejs.org/en/download/).
+Depois você vai instalar o Angular CLI. Instala-se ele usando esse comando 
+```npm install -g @angular/cli``
+Com o Node e Angular instalado na máquina, vc precisa apenas de 2 comandos (no terminal) na pasta do projeto, nessa ordem:
+1. `npm install` -> Para instalar as dependências do projeto. (só precisa ser executado uma vez)<br>
+2. `ng serve` -> Para iniciar o servidor local (para acessar o projeto via navegador, digite na barra de endereço o endereço que aparecerá no terminal)<br>
+
+
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+Feito com ♥ by Felipe Melo
